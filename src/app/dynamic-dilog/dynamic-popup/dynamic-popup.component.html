@@ -1,0 +1,15 @@
+
+<!-- <div class="card" [FormGroup]="dialogForm">
+    <input type="text" pInputText formControlName="name"/>
+    <input type="text" pInputText formControlName="fullName"/>
+    <button (click)="submit()">SUBMIT</button>
+</div> -->
+
+<form [formGroup]="dialogForm" (submit)="submit()">
+    <div class="form-group">
+        
+        First Name:<input type="text" pInputText formControlName="name"/><br><br>
+        Last Name:<input type="text" pInputText formControlName="fullName"/>
+    </div><br>
+    <button style="border: 1px solid green; border-radius: 3px; padding: 5px;">SUBMIT</button>
+ </form>
